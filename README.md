@@ -118,7 +118,7 @@ systemctl status zabbix-agent.service
 ```
 6. Добавление адреса zabbix-server в zabbix-agent.conf на хостах:
 ```
-sudo sed -i 's/Server=127.0.0.1/Server=193.77.179.3/g' /etc/zabbix/zabbix_agentd.conf
+sudo sed -i 's/Server=127.0.0.1/Server=193.77.179.166/g' /etc/zabbix/zabbix_agentd.conf
 ```
 7. Рестарт Zabbix-agent на обоих хостах:
 ```
@@ -134,4 +134,6 @@ sudo tail -f /var/log/zabbix/zabbix_agentd.log
 ```
 ![resources](images/resources.png)
 ![logs](images/logs.png)
+![data_host1](images/data_host1.png)
+![data_host2](images/data_host2.png)
 ---
